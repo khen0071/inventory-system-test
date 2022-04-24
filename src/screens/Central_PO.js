@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Pagination from '../components/PaginationCentralPo.js';
-import { Container, Table } from 'react-bootstrap';
+import { Table } from 'react-bootstrap';
 import axios from 'axios';
 import styles from '../styles/datasheet.module.css';
 
@@ -32,47 +32,6 @@ const Central_PO = () => {
   const currentData = data.slice(indexOfFirstDate, indexOfLastData);
   //paginate function
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
-
-  //https://script.google.com/macros/s/AKfycbyYCMSFz_3SAU9PmLLG4Rzlut3TDaXvwc25mMwHSfk1c8ZL8g3GUH9RhjnhZNRQCu3x/exec
-
-  // useEffect(() => {
-  //   async function getData() {
-  //     const response = await fetch(
-  //       'https://script.google.com/macros/s/AKfycbxJXrKnbBz4eJpeOVifVfEzhj30REWkq0KuumCXiK9KUY_NgkKd4jGSVhme7T6TI3u6/exec'
-  //     );
-
-  //     let actualData = await response.json();
-
-  //     console.log(actualData);
-  //   }
-  //   getData()
-  // });
-
-  // const [orders, setOrders] = useState([]);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const { data } = await axios.get(
-  //       'https://script.google.com/macros/s/AKfycbxJXrKnbBz4eJpeOVifVfEzhj30REWkq0KuumCXiK9KUY_NgkKd4jGSVhme7T6TI3u6/exec'
-  //     );
-
-  //     setOrders(data);
-  //     console.log(data);
-  //   };
-  //   fetchData();
-  // }, []);
-
-  // useEffect(() => {
-  //   axios
-  //     .get('/api/all_data')
-  //     .then((res) => {
-  //       console.log(res);
-  //       setOrders([res.data]);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err
-  //     });
-  // }, []);
 
   return (
     <>

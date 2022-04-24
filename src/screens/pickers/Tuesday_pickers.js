@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import PickersNav from '../../components/PickersNav';
 
-import { Container, Table, Row, Col } from 'react-bootstrap';
+import { Table } from 'react-bootstrap';
 import axios from 'axios';
 import styles from '../../styles/datasheet.module.css';
 
