@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import PickersNav from '../../components/PickersNav';
 
 import { Table } from 'react-bootstrap';
-import axios from 'axios';
+
 import styles from '../../styles/datasheet.module.css';
 
 const Monday_pickers = () => {
