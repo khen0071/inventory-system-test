@@ -1,13 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+}
+
+.main-container {
+}
+
+main {
+  padding-top: 50px;
+
+  margin: auto;
+  min-height: 100vh;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.add_button {
+  display: block;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.form-container {
+  background: rgb(200, 200, 200) !important;
+  padding: 40px;
+}
+
+.form-container form {
+  color: rgb(0, 0, 0);
+}
+
+.form-container button {
+  border-radius: 5px;
+}
+
+.text-muted {
+  color: rgb(79, 79, 79) !important;
+}
+
+/*Pagination*/
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-item {
+  background: #0d6efd;
+  border: 1px solid rgb(133, 133, 133);
+}
+
+.page-link {
+  color: #fff;
+  background: #0d6efd;
+  border: 1px solid #5dd9f5;
+}
+
+.page-link:hover {
+  color: #fff;
+  background: #013179;
 }

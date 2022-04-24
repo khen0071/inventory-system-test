@@ -1,0 +1,20 @@
+.central_po_container {
+  padding: 0 50px;
+}
+
+.central_po_container h1 {
+  text-align: center;
+  padding-bottom: 10px;
+  color: #0b6491;
+}
+
+.table_layout {
+  background: #fff;
+  color: #085379;
+  border: 3px solid rgb(0, 159, 180);
+}
+
+.table_thead {
+  background: #063750;
+  color: #fff;
+}

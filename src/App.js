@@ -1,25 +1,62 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-function App() {
+import Header from './components/Header';
+
+import CentralPO from './screens/Central_PO';
+import CentralPickers from './screens/pickers/Central_Pickers';
+import MondayPickers from './screens/pickers/Monday_pickers';
+import TuesdayPickers from './screens/pickers/Tuesday_pickers';
+import WednesdayPickers from './screens/pickers/Wednesday_pickers';
+import ThursdayPickers from './screens/pickers/Thursday_pickers';
+import FridayPickers from './screens/pickers/Friday_pickers';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <div>
+          <div className='main-container'>
+            {/* <SideNav /> */}
+            <Header />
+
+            <main>
+              <Routes>
+                {/* Product Routing */}
+
+                <Route path='/' element={<CentralPO />} exact />
+
+                <Route
+                  path='/monday_pickers'
+                  element={<MondayPickers />}
+                  exact
+                />
+                <Route
+                  path='/tuesday_pickers'
+                  element={<TuesdayPickers />}
+                  exact
+                />
+                <Route
+                  path='/wednesday_pickers'
+                  element={<WednesdayPickers />}
+                  exact
+                />
+                <Route
+                  path='/thursday_pickers'
+                  element={<ThursdayPickers />}
+                  exact
+                />
+                <Route
+                  path='/friday_pickers'
+                  element={<FridayPickers />}
+                  exact
+                />
+              </Routes>
+            </main>
+          </div>
+        </div>
+      </Router>
+    </>
   );
-}
+};
 
 export default App;
