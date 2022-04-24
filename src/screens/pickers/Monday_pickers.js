@@ -24,75 +24,54 @@ const Monday_pickers = () => {
     fetchData();
   }, []);
 
-  var mondayArray = data.filter(function (item) {
-    return item.day === 'monday';
-  });
+  //   var mondayArray = data.filter(function (item) {
+  //     return item.day === 'monday';
+  //   });
 
-  var newArray = [];
-  mondayArray.forEach((item) => {
-    var newItem = {
-      po_number: item.po_number,
-      account: item.account,
-      team: item.team,
-      queue_num: item.queue_num,
-      day: item.day,
-      date: item.date.split('T')[0],
-      product_details: [],
-    };
+  //   var newArray = [];
+  //   mondayArray.forEach((item) => {
+  //     var newItem = {
+  //       po_number: item.po_number,
+  //       account: item.account,
+  //       team: item.team,
+  //       queue_num: item.queue_num,
+  //       day: item.day,
+  //       date: item.date.split('T')[0],
+  //       product_details: [],
+  //     };
 
-    mondayArray.map((innerItem) => {
-      if (innerItem.po_number === newItem.po_number) {
-        newItem.product_details = newItem.product_details.concat({
-          product_title: innerItem.product_title,
-          tsin: innerItem.tsin,
-          short: innerItem.short,
-          units: innerItem.units,
-          product_po_number: innerItem.po_number,
-        });
-      }
-    });
+  //     mondayArray.map((innerItem) => {
+  //       if (innerItem.po_number === newItem.po_number) {
+  //         newItem.product_details = newItem.product_details.concat({
+  //           product_title: innerItem.product_title,
+  //           tsin: innerItem.tsin,
+  //           short: innerItem.short,
+  //           units: innerItem.units,
+  //           product_po_number: innerItem.po_number,
+  //         });
+  //       }
+  //     });
 
-    newArray.push(newItem);
-  });
+  //     newArray.push(newItem);
+  //   });
 
-  const mondayArray_noDups = [
-    ...new Map(newArray.map((item) => [item.po_number, item])).values(),
-  ];
+  //   const mondayArray_noDups = [
+  //     ...new Map(newArray.map((item) => [item.po_number, item])).values(),
+  //   ];
 
-  console.table(mondayArray_noDups);
+  //   console.table(mondayArray_noDups);
 
-  var test1 = mondayArray_noDups.map(
-    ({
-      po_number,
-      date,
-      day,
-      account,
-      team,
-      queue_num,
-      product_details: [
-        { product_title, tsin, units, short, product_po_number },
-      ],
-    }) => {
-      return {
-        product_title: product_title,
-        tsin: tsin,
-        account: account,
-        product_po_number: product_po_number,
-      };
-    }
-  );
+  //   var test2 = mondayArray_noDups?.map((item) =>
+  //     item.product_details?.map((data) => {
+  //       return {
+  //         po_number: item.po_number,
+  //         product_title: data.product_title,
+  //         tsin: data.tsin,
+  //       };
+  //     })
+  //   );
 
-  var test2 = mondayArray_noDups?.map((item) =>
-    item.product_details?.map((data) => {
-      return {
-        po_number: item.po_number,
-        product_title: data.product_title,
-        tsin: data.tsin,
-      };
-    })
-  );
-
-  console.log(test2);
+  //   console.log(test2);
 
   return (
     <>
