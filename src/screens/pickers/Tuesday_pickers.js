@@ -7,26 +7,26 @@ import axios from 'axios';
 import styles from '../../styles/datasheet.module.css';
 
 const Tuesday_pickers = () => {
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const { data } = await axios.get(
-          'https://script.google.com/macros/s/AKfycbzazxAZ2emmkuWdosBe2iKAecYA7MnDnwzYyIQQBiRNrPbS25lUG9r0OWSjbYywGxR_/exec'
-        );
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const { data } = await axios.get(
+  //         'https://script.google.com/macros/s/AKfycbzazxAZ2emmkuWdosBe2iKAecYA7MnDnwzYyIQQBiRNrPbS25lUG9r0OWSjbYywGxR_/exec'
+  //       );
 
-        setData(data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    fetchData();
-  }, []);
+  //       setData(data);
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
 
-  var tuesdayArray = data.filter(function (item) {
-    return item.day === 'tuesday';
-  });
+  // var tuesdayArray = data.filter(function (item) {
+  //   return item.day === 'tuesday';
+  // });
 
   // var newArray = [];
   // tuesdayArray.forEach((item) => {
