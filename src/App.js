@@ -23,13 +23,13 @@ const App = () => {
               <Routes>
                 {/* Product Routing */}
 
-                <Route path='/' element={<CentralPO />} exact />
+                <Route path='/' element={<MondayPickers />} exact />
 
-                <Route
+                {/* <Route
                   path='/monday_pickers'
                   element={<MondayPickers />}
                   exact
-                />
+                /> */}
                 <Route
                   path='/tuesday_pickers'
                   element={<TuesdayPickers />}
