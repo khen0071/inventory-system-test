@@ -51,7 +51,7 @@ const Monday_pickers = () => {
           product_po_number: innerItem.po_number,
         });
       } else {
-        return true;
+        return item;
       }
     });
 
