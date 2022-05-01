@@ -2,8 +2,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Header from './components/Header';
 
-import CentralPO from './screens/Central_PO';
-
 import MondayPickers from './screens/pickers/Monday_pickers';
 import TuesdayPickers from './screens/pickers/Tuesday_pickers';
 import WednesdayPickers from './screens/pickers/Wednesday_pickers';

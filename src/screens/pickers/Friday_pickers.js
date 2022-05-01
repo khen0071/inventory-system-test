@@ -50,6 +50,8 @@ const Monday_pickers = () => {
           units: innerItem.units,
           product_po_number: innerItem.po_number,
         });
+      } else {
+        return true;
       }
     });
 
