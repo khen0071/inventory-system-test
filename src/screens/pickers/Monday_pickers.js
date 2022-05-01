@@ -51,7 +51,13 @@ const Monday_pickers = () => {
           product_po_number: innerItem.po_number,
         });
       } else {
-        return item;
+        newItem.product_details = newItem.product_details.concat({
+          product_title: innerItem.product_title,
+          tsin: innerItem.tsin,
+          is_short: innerItem.is_short,
+          units: innerItem.units,
+          product_po_number: innerItem.po_number,
+        });
       }
     });
 
