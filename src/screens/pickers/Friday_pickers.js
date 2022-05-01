@@ -41,7 +41,7 @@ const Monday_pickers = () => {
       product_details: [],
     };
 
-    fridayArray.map((innerItem) => {
+    fridayArray.forEach((innerItem) => {
       if (innerItem.po_number === newItem.po_number) {
         newItem.product_details = newItem.product_details.concat({
           product_title: innerItem.product_title,
