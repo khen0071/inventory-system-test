@@ -49,6 +49,7 @@ const Monday_pickers = () => {
           is_short: innerItem.is_short,
           units: innerItem.units,
           product_po_number: innerItem.po_number,
+          image: innerItem.image_url,
         });
       }
     });
