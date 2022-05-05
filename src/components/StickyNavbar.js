@@ -1,11 +1,12 @@
 import React from 'react';
 import { Container, Navbar, Nav, Table } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import { Link } from 'react-router-dom';
 import styles from '../styles/datasheet.module.css';
 const StickyNavbar = () => {
   return (
     <>
-      <Table striped bordered hover responsive className={styles.table_layout1}>
+      {/* <Table striped bordered hover responsive className={styles.table_layout1}>
         <thead className={styles.table_thead}>
           <tr>
             {' '}
@@ -26,7 +27,30 @@ const StickyNavbar = () => {
             </LinkContainer>
           </tr>
         </thead>
-      </Table>
+      </Table> */}
+      <div className={styles.nav_container}>
+        <ul>
+          <LinkContainer to='/'>
+            <li>Monday</li>
+          </LinkContainer>
+
+          <LinkContainer to='/tuesday_pickers'>
+            <li>Tuesday</li>
+          </LinkContainer>
+
+          <LinkContainer to='/wednesday_pickers'>
+            <li>Wednesday</li>
+          </LinkContainer>
+
+          <LinkContainer to='/thursday_pickers'>
+            <li>Thursday</li>
+          </LinkContainer>
+
+          <LinkContainer to='/friday_pickers'>
+            <li>Friday</li>
+          </LinkContainer>
+        </ul>
+      </div>
     </>
   );
 };

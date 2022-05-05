@@ -1,12 +1,27 @@
 .central_po_container {
   padding: 20px;
-  padding-top: 185px;
+  padding-top: 140px;
 }
 
 .central_po_container h1 {
   text-align: center;
 
   color: #0b6491;
+}
+
+.nav_container ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  background: #095658;
+  margin: 0px;
+  padding: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .table_layout {
@@ -18,7 +33,7 @@
 .table_layout1 {
   background: rgb(19, 19, 19);
   color: #333;
-  border: 3px solid rgb(196, 196, 196);
+  border: 1px solid rgb(196, 196, 196);
 }
 
 th {
@@ -65,6 +80,11 @@ th {
 
   .central_po_container {
     padding: 20px;
-    padding-top: 160px;
+    padding-top: 120px;
+  }
+
+  .nav_container ul {
+    font-weight: bold;
+    font-size: 16px;
   }
 }

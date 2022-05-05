@@ -78,7 +78,7 @@ const Monday_pickers = () => {
         <br />
       </div>
       <div className={styles.central_po_container}>
-        <div className='fixed-top px-3'>
+        <div className='fixed-top'>
           <StickyNavbar />
           <Table
             striped
