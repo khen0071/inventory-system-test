@@ -36,7 +36,7 @@ const TablePickers = ({ mondayArray_noDup, mondayArray_noDups }) => {
               <th>Total Units: {sumUnits} </th>
               <th>Are documents Matching?</th>
               <th>
-                <input type='checkbox' />
+                <input id='cb1' type='checkbox' />
               </th>
             </tr>
           </thead>
@@ -140,7 +140,7 @@ const TablePickers = ({ mondayArray_noDup, mondayArray_noDups }) => {
             <tr>
               <th className='text-center'>Confirm finished pulling po</th>
               <th className='text-center'>
-                <input type='checkbox' />
+                <input id='cb1' type='checkbox' />
               </th>
             </tr>
           </thead>

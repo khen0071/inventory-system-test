@@ -1,6 +1,6 @@
 .central_po_container {
   padding: 20px;
-  padding-top: 140px;
+  padding-top: 150px;
 }
 
 .central_po_container h1 {
@@ -17,11 +17,11 @@
   align-items: center;
   background: #095658;
   margin: 0px;
-  padding: 20px;
+  padding: 25px;
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .table_layout {
@@ -56,8 +56,8 @@ th {
   color: #fff;
 }
 .table_thead3 {
-  background: #add495;
-  color: #333;
+  background: #0d4602;
+  color: #fff;
 }
 
 .table_container {
