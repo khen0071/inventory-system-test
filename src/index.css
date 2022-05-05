@@ -91,6 +91,90 @@ h3 {
 /*Input*/
 
 input {
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
+}
+
+#cb1 {
+  accent-color: #84ba41;
+}
+
+/*Navbar*/
+.navbar-nav .nav-link {
+  font-size: 18px !important;
+  margin: 0px 30px;
+}
+
+/*Image*/
+img {
+  width: 150px;
+  height: 150px;
+}
+
+/*Sticky Navbar*/
+/* Style the navbar */
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Navbar links */
+#navbar a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+/*End Sticky Navbar*/
+
+.top_navbar {
+  background-color: #197477;
+}
+
+@media only screen and (max-width: 1020px) {
+  .navbar-nav .nav-link {
+    font-size: 14px !important;
+    margin: 0px 20px;
+  }
+
+  .tsin {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  th {
+    text-align: center;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
 }

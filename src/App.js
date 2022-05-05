@@ -1,7 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Header from './components/Header';
-
 import MondayPickers from './screens/pickers/Monday_pickers';
 import TuesdayPickers from './screens/pickers/Tuesday_pickers';
 import WednesdayPickers from './screens/pickers/Wednesday_pickers';
@@ -15,7 +13,6 @@ const App = () => {
         <div>
           <div className='main-container'>
             {/* <SideNav /> */}
-            <Header />
 
             <main>
               <Routes>
